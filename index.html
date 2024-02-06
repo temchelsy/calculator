@@ -1,59 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./assert/assert/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>js calculator</title>
-<link rel="stylesheet" href="./assert/assert/style.css">
-</head>
-
-<body>
-    <div class="bod">
-        <div class="overall">
-            <input type="text" placeholder="0" class="first-role">
-
-            <div class="second-role">
-
-                <button>AC</button>
-
-                <button>()</button>
-
-                <button>%</button>
-
-                <button style="background-color: gold;" class="modolus">/</button>
-            </div>
-            <div class="third-role">
-                <button style="background-color: #2c2929;">7</button>
-                <button style="background-color: #2c2929;">8</button>
-                <button style="background-color: #2c2929;">9</button>
-                <button style="background-color: gold;">*</button>
-            </div>
-
-            <div class="fourth-role">
-                <button style="background-color: #2c2929;">4</button>
-                <button style="background-color: #2c2929;">5</button>
-                <button style="background-color: #2c2929;">6</button>
-                <button style="background-color: gold;">-</button>
-            </div>
-
-            <div class="fifth-role">
-                <button style="background-color: #2c2929;">1</button>
-                <button style="background-color: #2c2929;">2</button>
-                <button style="background-color: #2c2929;">3</button>
-                <button style="background-color: gold;">+</button>
-            </div>
-            <div class="sixth-role">
-                <button style="background-color: #2c2929;">0</button>
-                <button style="background-color: #2c2929;">.</button>
-                <button style="background-color: #2c2929;">x</button>
-                <button style="background-color: gold;">=</button>
+    </head>
+    <body>
+        <!-- <h1>FERRY CALCULATOR </h1> -->
+        <div class="main-button">
+            <!-- <b>FERRY CALCULATOR</b> -->
+            <!-- <div class="display"> -->
+                <b><input type="text" id="screen" placeholder="0" style="cursor: alias;"></b>
+            <!-- </div> -->
+            <div class = "container-buttons">
+                <div class="buttons">
+                    <input type="button" class="num"  value="AC" onclick="clr()" style="background-color: #c7c4bbdc; color: #000;">
+                    <input type="button" class="num" value="-/+" onclick="plusMinus()" style="background-color: #c7c4bbdc;color: #000;">
+                    <input type="button" class="num" value= "%" onclick="show('%')" style="background-color: #c7c4bbdc;color: #000;">
+                    <input type="button" class="num" value="&#247" onclick="show('/')" style="background-color: #ffae00;">
+                </div>
+                <div class="buttons">
+                    <input type="button"  class="num" value= "7" onclick="show(7)">
+                    <input type="button"  class="num" value= "8" onclick="show(8)">
+                    <input type="button"  class="num" value= "9" onclick="show(9)">
+                    <input type="button"  class="num" value= "x" onclick="show('*')" style="background-color: #ffae00;">
+                </div>
+                <div class="buttons">
+                    <input type="button"  class="num" value= "4" onclick="show(4)">
+                    <input type="button"  class="num" value= "5" onclick="show(5)">
+                    <input type="button"  class="num" value= "6" onclick="show(6)">
+                    <input type="button"  class="num" value= "-" onclick="show('-')" style="background-color: #ffae00;">
+                </div>
+                <div class="buttons">
+                    <input type="button" class="num" value= "1" onclick="show(1)">
+                    <input type="button" class="num" value= "2" onclick="show(2)">
+                    <input type="button" class="num" value= "3" onclick="show(3)">
+                    <input type="button" class="num" value= "+" onclick="show('+')" style="background-color: #ffae00;">
+                </div>
+                <div class="buttons">
+                    <!-- <input type="button" class="num" value="-/+" onclick="plusMinus()"> -->
+                    <input type="button" class="zero" value= "0" onclick="show(0)">
+                    <input type="button" class="num" value= "." onclick="show('.')">
+                    <input type="button" class="num" value= "=" onclick="mathOperation()" style="background-color: #ffae00;">
+                </div>
             </div>
         </div>
-
-
-    </div>
-
-</body>
-
+        <script src="./index.js"></script>
+    </body>
 </html>
